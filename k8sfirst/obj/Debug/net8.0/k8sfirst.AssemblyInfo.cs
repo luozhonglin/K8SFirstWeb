@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("k8sfirst")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ce80e1732d90f0165d561320e719b3323463cd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("k8sfirst")]
 [assembly: System.Reflection.AssemblyTitleAttribute("k8sfirst")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
