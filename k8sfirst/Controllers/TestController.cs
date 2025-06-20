@@ -10,7 +10,7 @@ namespace k8sfirst.Controllers
         [HttpGet]
         public string GetName()
         {
-            return "luozhonglin";
+            return "luozhonglin,恭喜你，第一个K8S集群发布成功了！";
         }
 
         [HttpGet]
