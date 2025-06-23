@@ -20,7 +20,7 @@ spec:
       - name: ${SERVICE_NAME}
         image: ${REGISTRY_HOST_IMAGE} # 镜像地址
         ports:
-          - containerPort: 5000
+          - containerPort: 8100 # 必须与应用程序监听端口一致
         env:
         - name: ASPNETCORE_ENVIRONMENT
           value: ${ASPNETCORE_ENVIRONMENT} # 设置运行环境

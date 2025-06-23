@@ -11,7 +11,7 @@ spec: #这是关于该 Service 的定义，描述了 Service 如何选择 Pod，
   ports:
   - name: ${SERVICE_SERVICE_PORT_NAME} #端口的名字
     protocol: TCP #协议类型 TCP/UDP
-    port: 32610 #集群内的其他容器组可通过 5000 端口访问 Service
+    port: 32610 #集群内的其他容器组可通过 32610 端口访问 Service
     nodePort: ${SERVICE_SERVICE_NODE_PORT} #通过任意节点的 SERVICE_SERVICE_NODE_PORT 端口访问 Service
-    targetPort: 8100 #将请求转发到匹配 Pod 的 5000 端口
+    targetPort: 8100 #将请求转发到匹配 Pod 的 32610 端口
   type: NodePort #Serive的类型，ClusterIP/NodePort/LoaderBalancer
