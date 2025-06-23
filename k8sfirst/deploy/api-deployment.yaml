@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${SERVICE_DEPLOYNAME_NAME}
+  namespace: ${K8S_DEPLOY_NAMESPACE}
+  labels: 
+    appname: ${SERVICE_NAME}
+    version: ${SERVICE_VERSION}
+spec:
+  replicas: ${SERVICE_REPLICAS} # 一个实例
+  selector:
+    matchLabels:
+        appname: ${SERVICE_NAME}
+  template:
+    metadata:
+      labels:
+        appname: ${SERVICE_NAME}
+    spec:
+      containers:
+      - name: ${SERVICE_NAME}
+        image: ${REGISTRY_HOST_IMAGE} # 镜像地址
+        ports:
+          - containerPort: 5000
+        env:
+        - name: ASPNETCORE_ENVIRONMENT
+          value: ${ASPNETCORE_ENVIRONMENT} # 设置运行环境
+        - name: ASPNETCORE_URLS
+          value: "http://+:8100" # 设置服务监听端口
+      imagePullSecrets:        #使用的secret
+       - name: registry-secret
