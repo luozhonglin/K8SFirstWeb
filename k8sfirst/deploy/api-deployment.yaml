@@ -26,5 +26,5 @@ spec:
           value: ${ASPNETCORE_ENVIRONMENT} # 设置运行环境
         - name: ASPNETCORE_URLS
           value: "http://+:8100" # 设置服务监听端口
-      imagePullSecrets:        #使用的secret
+      imagePullSecrets:        #使用的secret 
        - name: registry-secret
