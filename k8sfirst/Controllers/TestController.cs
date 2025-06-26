@@ -18,7 +18,7 @@ namespace k8sfirst.Controllers
             {
                result += $"当前请求的负载地址：{userAgent}";
             }
-            return result;
+            return result+headers.Count;
         }
 
         [HttpGet]
