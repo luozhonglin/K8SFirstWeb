@@ -27,6 +27,12 @@ namespace k8sfirst.Controllers
 
             var headers = Request.Headers;
 
+            var s = HttpContext.Request.Path;
+
+            var client = new HttpClient();
+            var response = client.GetAsync(HttpContext.Request.Host+HttpContext.Request.Path).GetAwaiter();
+            return Newtonsoft.Json.JsonConvert.SerializeObject(response);
+
 
             if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
             { 

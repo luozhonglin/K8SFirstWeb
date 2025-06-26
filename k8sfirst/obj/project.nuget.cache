@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HTbmx1q5/FYCOGTLAvRkYBqc/hWLeM+7leiAtwS6vEneF5iTe14ZiQr5VcB7Tl0XhX2Vr0ORWMFD1SDBZXR6SA==",
+  "dgSpecHash": "HAresFbzNPY=",
   "success": true,
   "projectFilePath": "C:\\K8SWeb\\K8SFirstWeb\\k8sfirst\\k8sfirst.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lzl\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\lzl\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\lzl\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "C:\\Users\\lzl\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\lzl\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\lzl\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\lzl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
