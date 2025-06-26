@@ -19,6 +19,7 @@ namespace k8sfirst.Controllers
 
 
         [HttpGet]
+        [HttpHead]
         public string GetName()
         {
 
