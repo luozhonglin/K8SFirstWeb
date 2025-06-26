@@ -20,20 +20,12 @@ namespace k8sfirst.Controllers
 
         [HttpGet]
         [HttpHead]
-        public string GetName()
+        public async Task<string> GetName()
         {
 
             var result = "luozhonglin,恭喜你，第一个K8S集群发布成功了！！！";
 
-            var headers = Request.Headers;
-
-            var s = HttpContext.Request.Path;
-
-            var client = new HttpClient();
-            var response = client.GetAsync("http://"+HttpContext.Request.Host+HttpContext.Request.Path).GetAwaiter();
-            return Newtonsoft.Json.JsonConvert.SerializeObject(response);
-
-
+            var headers = _httpContextAccessor.HttpContext.Response.Headers;
             if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
             { 
                result += $"当前请求的负载地址：{userAgent}";
