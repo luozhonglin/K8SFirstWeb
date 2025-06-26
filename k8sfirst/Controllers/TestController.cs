@@ -25,9 +25,17 @@ namespace k8sfirst.Controllers
 
             var result = "luozhonglin,恭喜你，第一个K8S集群发布成功了！！！";
 
-            var headers = _httpContextAccessor.HttpContext.Response.Headers;
-            if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
+            var headers = _httpContextAccessor.HttpContext.Request.Headers;
+
+            var str = "";
+            foreach (var item in headers)
             {
+                
+               str+= item+"/n";
+            }
+            return str;
+            if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
+            { 
                result += $"当前请求的负载地址：{userAgent}";
             }
             return result+headers.Count;
