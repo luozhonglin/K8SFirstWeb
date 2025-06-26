@@ -28,11 +28,11 @@ namespace k8sfirst.Controllers
             var headers = _httpContextAccessor.HttpContext.Request.Headers;
 
 
-            if (headers.TryGetValue("X-Real-IP", out var userAgent))
+            if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
             { 
                result += $"当前请求的负载地址：{userAgent}";
             }
-            return result+headers.Count;
+            return result;
         }
 
         [HttpGet]
