@@ -30,7 +30,7 @@ namespace k8sfirst.Controllers
             var s = HttpContext.Request.Path;
 
             var client = new HttpClient();
-            var response = client.GetAsync(HttpContext.Request.Host+HttpContext.Request.Path).GetAwaiter();
+            var response = client.GetAsync("http://"+HttpContext.Request.Host+HttpContext.Request.Path).GetAwaiter();
             return Newtonsoft.Json.JsonConvert.SerializeObject(response);
 
 
