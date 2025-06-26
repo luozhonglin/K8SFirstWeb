@@ -27,14 +27,8 @@ namespace k8sfirst.Controllers
 
             var headers = _httpContextAccessor.HttpContext.Request.Headers;
 
-            var str = "";
-            foreach (var item in headers)
-            {
-                
-               str+= item+"/n";
-            }
-            return str;
-            if (headers.TryGetValue("X-Upstream-Addr", out var userAgent))
+
+            if (headers.TryGetValue("X-Forwarded-For", out var userAgent))
             { 
                result += $"当前请求的负载地址：{userAgent}";
             }
