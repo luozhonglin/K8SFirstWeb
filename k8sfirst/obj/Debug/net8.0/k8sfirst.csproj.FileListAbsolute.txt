@@ -66,3 +66,4 @@ C:\K8SWeb\K8SFirstWeb\k8sfirst\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\K8SWeb\K8SFirstWeb\k8sfirst\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\K8SWeb\K8SFirstWeb\k8sfirst\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\K8SWeb\K8SFirstWeb\k8sfirst\obj\Debug\net8.0\k8sfirst.csproj.Up2Date
+C:\K8SWeb\K8SFirstWeb\k8sfirst\bin\Debug\net8.0\Newtonsoft.Json.dll
